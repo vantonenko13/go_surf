@@ -1,6 +1,7 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 
 .header__slider {
   &-item {
@@ -9,7 +10,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
   }
+}
+
+.slider-item__info {
+  position: absolute;
+  right: 80px;
+  bottom: 116px;
+  text-align: right;
 }
 
 @import "media";
