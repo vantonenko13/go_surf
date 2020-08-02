@@ -1,11 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background-color: #171919;
+  color: #fff;
+  text-transform: uppercase;
 }
 a {
   display: inline-block;
   text-decoration: none;
+  color: #fff;
 }
 
 ul,
@@ -15,14 +28,17 @@ li {
   padding: 0;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .subtitle-left {
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
-  text-transform: uppercase;
-  color: #ffffff;
   opacity: 0.5;
   padding-left: 103px;
   position: relative;
@@ -36,4 +52,36 @@ li {
     left: 0;
     top: 50%;
   }
+}
+
+.title {
+  span {
+    font-size: 200px;
+    color: rgba(#fff, 0.02);
+    font-weight: 800;
+    position: relative;
+    transform: translateX(-50px);
+    display: inline-block;
+  }
+  h3 {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+
+.surf {
+  padding: 160px 0 210px;
 }
