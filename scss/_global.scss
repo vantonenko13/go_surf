@@ -159,10 +159,71 @@ li {
 }
 
 .surf,
-.travel {
+.holder {
   padding: 160px 0 120px;
 }
 
-.travel {
+.holder {
   padding-bottom: 265px;
+  margin-bottom: 35px;
+}
+
+//////////////////////////////////////////@extend
+
+.quantity {
+  display: inline-block;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 25px;
 }
