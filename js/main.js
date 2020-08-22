@@ -74,4 +74,16 @@ $(function () {
       spinner.find("input").trigger("change");
     });
   });
+
+  $(".quantity-button").on("click", function () {
+    let summ =
+      $(".nights").val() * $(".summ").data("nights") +
+      ($(".quests").val() - 1) * $(".summ").data("quests");
+    $(".summ").html("$" + summ);
+  });
+
+  let summ =
+    $(".nights").val() * $(".summ").data("nights") +
+    ($(".quests").val() - 1) * $(".summ").data("quests");
+  $(".summ").html("$" + summ);
 });
