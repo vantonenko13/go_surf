@@ -497,6 +497,17 @@
     background-position: right center;
     margin-top: -230px;
     background-size: contain;
+    display: flex;
+    position: relative;
+    &-img {
+      position: absolute;
+      right: 0;
+      top: -50px;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
     .descr__head {
       position: relative;
       padding-right: 68px;

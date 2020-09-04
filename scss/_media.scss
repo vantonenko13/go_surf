@@ -301,8 +301,8 @@
   .holder-slider__info-title {
     padding-left: 0;
   }
-  .holder-slider__descr {
-    background-position: right -119px;
+  .holder-slider__descr-img {
+    top: -130px;
   }
   .holder {
     .title {
@@ -330,6 +330,8 @@
 }
 
 @media (max-width: 767px) {
+  // .holder-slider__descr-img {
+  // }
   .surfboard-box__content {
     padding-left: 0;
     top: 35px;
@@ -393,6 +395,10 @@
 @media (max-width: 640px) {
   .holder-slider__descr {
     background-image: none !important;
+  }
+  .holder-slider__descr-img {
+    width: 300px;
+    top: -20px;
   }
   .btn {
     font-size: 30px;
