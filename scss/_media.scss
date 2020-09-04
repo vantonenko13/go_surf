@@ -377,6 +377,13 @@
 }
 
 @media (max-width: 680px) {
+  .slider-item__info-title {
+    opacity: 0.7;
+    margin-bottom: 0px;
+  }
+  .menu-btn {
+    top: 50px;
+  }
   .shop__slider-content {
     display: block;
   }
@@ -483,6 +490,9 @@
   .slider-map .slick-track .slider-dots__content {
     width: 200px;
     padding: 28px 10px 0;
+  }
+  .descr__head {
+    font-size: 28px;
   }
   .shop__extras-box {
     margin-right: 30px;
