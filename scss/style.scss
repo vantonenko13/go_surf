@@ -127,6 +127,11 @@
   }
 }
 
+.menu__list a:hover {
+  color: $green;
+  transition: all 0.5s;
+}
+
 .menu-btn {
   display: none;
   width: 60px;
@@ -771,7 +776,7 @@
 
 .footer {
   text-align: center;
-  padding: 285px 0 34px;
+  padding: 160px 0 34px;
   .btn {
     span {
       padding: 17px 17px 15px;

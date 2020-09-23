@@ -152,5 +152,40 @@ $(function () {
     $(".menu").toggleClass("active");
   });
 
+  //------------Анимация bounce для ссылок меню
+  $(".menu__link-img").mouseover(function () {
+    $(this).addClass("wow animate__animated animate__bounce");
+  });
+  $(".menu__link-img").mouseout(function () {
+    $(this).removeClass("wow animate__animated animate__bounce");
+  });
+  //---------------------------------------------------
+  //------------Анимация fadeIn для характеристик борда
+  $(".surfboard-box__circle").on("click", function () {
+    $(".surfboard-box__content").removeClass(
+      "animate__animated animate__fadeIn"
+    );
+    $(".surfboard-box__content").addClass("animate__animated animate__fadeIn");
+  });
+  //--------------------------------------
+  //------------Плавная прокрутка по якорю
+  let anchors = document.querySelectorAll(".menu__link");
+  console.log(anchors);
+
+  for (anchor of anchors) {
+    if (anchor) {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const anchorId = this.getAttribute("href");
+        console.log(anchorId);
+        document.querySelector(anchorId).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    }
+  }
+  // ----------------------------------------
+
   new WOW().init();
 });
